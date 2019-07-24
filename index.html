@@ -6,6 +6,7 @@
 
 <body>
     <h1>Welcome to Ajax</h1>
+    <div id="output"></div>
     <script>
         var myfriends = {
             "friends": [{
@@ -23,9 +24,11 @@
             }, ]
         };
         var users = myfriends.friends;
+        var html = ' ';
         for (i = 0; i < myfriends.friends.length; i++) {
-            console.log(myfriends.friends[i].first);
+            html += ' <p> ' + (myfriends.friends[i].first);
         }
+        document.getElementById("output").innerHTML = html;
     </script>
 
 </body>
