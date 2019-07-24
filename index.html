@@ -5,52 +5,27 @@
 </head>
 
 <body>
-    <h1> we are learning json today.</h1>
+    <h1>Welcome to Ajax</h1>
     <script>
-        var person = {
-            "firstname": "anisha",
-            "lastname": "shaji",
-            "age": 25,
-            "checkedin": true
-        }; // object is created.
-        var person2 = {
-            "Name": "Joe",
-            "Last Name": "Miller",
-            "Address": {
-                "Street": "Neverland 42"
-            },
-            "Hobbies": [
-                "doing stuff",
-                "dreaming"
-            ],
-            "cars": [{
-                "make": "bnw",
-                "year": 2016
-            }, {
-                "make": "bw",
-                "year": 2017
-            }]
-        };
-        var obj1 = {
+        var myfriends = {
             "friends": [{
-                "first": "Mike",
-                "last": "Smith"
+                "last": "JONES",
+                "first": "John"
             }, {
-                "first": "Jordan",
-                "last": "Jones"
+                "last": "Smith",
+                "first": "Agent"
             }, {
-                "first": "Alice",
-                "last": "Grey"
+                "last": "Orange",
+                "first": "Light"
             }, {
-                "first": "Stu",
-                "last": "Average"
-            }]
+                "last": "Blue",
+                "first": "Deep"
+            }, ]
         };
-
-
-
-
-        console.log(person);
+        var users = myfriends.friends;
+        for (i = 0; i < myfriends.friends.length; i++) {
+            console.log(myfriends.friends[i].first);
+        }
     </script>
 
 </body>
